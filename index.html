@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="left-nav">
+					<div class="search">
+						<input
+							type="text"
+							placeholder="Search a song..."
+							id="search"
+						/>
+						<i class="bi bi-search" id="searchIcon"></i>
+					</div>
+				</div>
+				<a href="">Spotify</a>
+				<a href="pages/login.html"
+					><i class="bi bi-person-circle"></i
+				></a>
+			</nav>
+		</header>
+
+		<main>
+			<div>
+				<div class="list">
+					<div class="songs-list">
+						<h3>Buscador</h3>
+						<div class="songs" id="songs"></div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="songs-list">
+						<h3>My Playlist</h3>
+						<div class="songs" id="my-playlist"></div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="songs-list">
+						<h3>Favoritos</h3>
+						<div class="songs" id="favorites"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="songs-container" id="songs-container"></div>
+		</main>
+		<script src="src/main.js"></script>
+	</body>
 </html>
